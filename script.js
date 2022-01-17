@@ -91,37 +91,28 @@ $('#linkBotaoInicioPagina').click(function(e){
 
 $('#menuPagina1').hover(function(){
     $('#menuPagina1 .conteudoNomeMenuPagina').toggleClass('conteudoNomeMenuPaginaHover');
-    /* $('#menuPagina1 .icon').toggleClass('iconHover'); */
 });
 $('#menuPagina2').hover(function(){
     $('#menuPagina2 .conteudoNomeMenuPagina').toggleClass('conteudoNomeMenuPaginaHover');
-    /* $('#menuPagina2 .icon').toggleClass('iconHover'); */
 });
 $('#menuPagina3').hover(function(){
     $('#menuPagina3 .conteudoNomeMenuPagina').toggleClass('conteudoNomeMenuPaginaHover');
-    /* $('#menuPagina3 .icon').toggleClass('iconHover'); */
 });
 $('#menuPagina4').hover(function(){
     $('#menuPagina4 .conteudoNomeMenuPagina').toggleClass('conteudoNomeMenuPaginaHover');
-    /* $('#menuPagina4 .icon').toggleClass('iconHover'); */
 });
 $('#menuPagina5').hover(function(){
     $('#menuPagina5 .conteudoNomeMenuPagina').toggleClass('conteudoNomeMenuPaginaHover');
-    /* $('#menuPagina5 .icon').toggleClass('iconHover'); */
 });
 $('#menuPagina6').hover(function(){
     $('#menuPagina6 .conteudoNomeMenuPagina').toggleClass('conteudoNomeMenuPaginaHover');
-    /* $('#menuPagina6 .icon').toggleClass('iconHover'); */
 });
 $('#menuPagina7').hover(function(){
     $('#menuPagina7 .conteudoNomeMenuPagina').toggleClass('conteudoNomeMenuPaginaHover');
-    /* $('#menuPagina7 .icon').toggleClass('iconHover'); */
 });
 $('#menuPagina8').hover(function(){
     $('#menuPagina8 .conteudoNomeMenuPagina').toggleClass('conteudoNomeMenuPaginaHover');
-    /* $('#menuPagina8 .icon').toggleClass('iconHover'); */
 });
 $('#menuPagina9').hover(function(){
     $('#menuPagina9 .conteudoNomeMenuPagina').toggleClass('conteudoNomeMenuPaginaHover');
-    /* $('#menuPagina9 .icon').toggleClass('iconHover'); */
 });

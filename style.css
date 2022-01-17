@@ -114,8 +114,16 @@ body::-webkit-scrollbar-thumb {
     padding: 5px;
 }
 .conteudoNomeMenuPagina{
+    padding: 5px 5px;
     padding-left: 20px;
     display: flex;
+}
+.conteudoNomeMenuPaginaHover{
+    background-color: #87CEFA;
+    padding: 5px 5px;
+    padding-left: 7px;
+    margin-left: 25px;
+    border-radius: 12px 50px 50px 12px;
 }
 .nomeMenuPagina{
     font-size: 20px;
@@ -123,22 +131,8 @@ body::-webkit-scrollbar-thumb {
     font-weight: bolder;
     padding-left: 5px;
 }
-.nomeMenuPaginaHover{
-    color: #87CEFA;
-}
 .icon{
     color: #000000;
-}
-.iconHover{
-    color: #87CEFA;
-    padding-left: 5px;
-}
-.conteudoNomeMenuPaginaHover{
-    background-color: #87CEFA;
-    padding: 5px 5px;
-    padding-left: 7px;
-    margin-left: 20px;
-    border-radius: 12px 50px 50px 12px;
 }
 
 /*geral*/
