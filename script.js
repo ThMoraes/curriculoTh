@@ -49,26 +49,39 @@ $('.nomeBotaoMenu').hover(function(){
 });
 
 
-$('.menuPagina').click(function(e){
+$('.nomeMenuPagina').click(function(e){
+    $('.menu').toggleClass('menuMostrar');
+    $('.conteudos').toggleClass('conteudosOcultar');
+    
+    $('.nomeBotaoMenu').toggleClass('nomeBotaoMenuOcultar');
+    $('.nomeBotaoMenuClose').toggleClass('nomeBotaoMenuCloseMostrar');
+
+    
     /* Desabilita tag <a> */
     e.preventDefault();
     /* Variavel pra pegar o que tem dentro da tag <a> */
     var id = $(this).attr('href');
     /* Distância entre o conteúdo da tag <a> até o top */
-    targetOffset = $(id).offset().top,
+    targetOffset = $(id).offset().top;
     /* Pegar a altura do menu */
     menuHeight = $('.topo').innerHeight();
     /* Animação */
     $('html, body').animate({
         scrollTop: targetOffset - menuHeight
     },/*velocidade da animação*/500);
+});
 
-
-    
-    
-    $('.menu').toggleClass('menuMostrar');
-    $('.conteudos').toggleClass('conteudosOcultar');
-    
-    $('.nomeBotaoMenu').toggleClass('nomeBotaoMenuOcultar');
-    $('.nomeBotaoMenuClose').toggleClass('nomeBotaoMenuCloseMostrar');
+$('#linkBotaoInicioPagina').click(function(e){   
+    /* Desabilita tag <a> */
+    e.preventDefault();
+    /* Variavel pra pegar o que tem dentro da tag <a> */
+    var id = $(this).attr('href');
+    /* Distância entre o conteúdo da tag <a> até o top */
+    targetOffset = $(id).offset().top;
+    /* Pegar a altura do menu */
+    menuHeight = $('.topo').innerHeight();
+    /* Animação */
+    $('html, body').animate({
+        scrollTop: targetOffset - menuHeight
+    },/*velocidade da animação*/500);
 });

@@ -320,4 +320,7 @@ body::-webkit-scrollbar-thumb {
     .conteudo{
         padding: 2px 20px;
     }
+    .nomeCertificado{
+    text-decoration: none;
+}
 }
