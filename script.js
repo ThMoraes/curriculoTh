@@ -116,7 +116,3 @@ $('#menuPagina8').hover(function(){
 $('#menuPagina9').hover(function(){
     $('#menuPagina9 .conteudoNomeMenuPagina').toggleClass('conteudoNomeMenuPaginaHover');
 });
-
-document.addEventListener("scroll", function(){
-    document.querySelector("body").style.backgroundPosition = '0 '+window.pageYOffset+'px';
- });
