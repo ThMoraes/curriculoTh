@@ -67,7 +67,7 @@ function mouseOut(){
 }
 
 
-function menuPagina(){
+$('.conteudoNomeMenuPagina').click(function(e){
     var menu = document.getElementById('menu');
     menu.className = "menu";
 
@@ -79,12 +79,11 @@ function menuPagina(){
     var botaoMenu = document.getElementById('botaoMenu');
     botaoMenu.className = "botaoMenu";
 
-
-    var menuPagina = document.getElementById('conteudoNomeMenuPagina');
+    
     /* Desabilita tag <a> */
-    menuPagina.preventDefault();
+    e.preventDefault();
     /* Variavel pra pegar o que tem dentro da tag <a> */
-    var id = $(menuPagina).attr('href');
+    var id = $(this).attr('href');
     /* Distância entre o conteúdo da tag <a> até o top */
     targetOffset = $(id).offset().top;
     /* Pegar a altura do menu */
@@ -93,28 +92,23 @@ function menuPagina(){
     $('html, body').animate({
         scrollTop: targetOffset - menuHeight
     },/*velocidade da animação*/900);
-}
+});
 
 
-
-
-    $('#linkBotaoInicioPagina').click(function(e){
-        /* Desabilita tag <a> */
-        e.preventDefault();
-        /* Variavel pra pegar o que tem dentro da tag <a> */
-        var id = $(this).attr('href');
-        /* Distância entre o conteúdo da tag <a> até o top */
-        targetOffset = $(id).offset().top;
-        /* Pegar a altura do menu */
-        menuHeight = $('.topo').innerHeight();
-        /* Animação */
-        $('html, body').animate({
-            scrollTop: targetOffset - menuHeight
-        },/*velocidade da animação*/900);
-    });
-
-
-
+$('#linkBotaoInicioPagina').click(function(e){
+    /* Desabilita tag <a> */
+    e.preventDefault();
+    /* Variavel pra pegar o que tem dentro da tag <a> */
+    var id = $(this).attr('href');
+    /* Distância entre o conteúdo da tag <a> até o top */
+    targetOffset = $(id).offset().top;
+    /* Pegar a altura do menu */
+    menuHeight = $('.topo').innerHeight();
+    /* Animação */
+    $('html, body').animate({
+        scrollTop: targetOffset - menuHeight
+    },/*velocidade da animação*/900);
+});
 
 
 $('#menuPagina1').hover(function(){
