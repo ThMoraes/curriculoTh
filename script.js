@@ -67,7 +67,7 @@ function mouseOut(){
 }
 
 
-$('.conteudoNomeMenuPagina').click(function(e){
+$('.conteudoNomeMenuConteudo').click(function(e){
     var menu = document.getElementById('menu');
     menu.className = "menu";
 
@@ -95,7 +95,7 @@ $('.conteudoNomeMenuPagina').click(function(e){
 });
 
 
-$('#linkBotaoInicioPagina').click(function(e){
+$('#linkBotaoInicioConteudo').click(function(e){
     /* Desabilita tag <a> */
     e.preventDefault();
     /* Variavel pra pegar o que tem dentro da tag <a> */
@@ -111,30 +111,30 @@ $('#linkBotaoInicioPagina').click(function(e){
 });
 
 
-$('#menuPagina1').hover(function(){
-    $('#menuPagina1 .conteudoNomeMenuPagina').toggleClass('conteudoNomeMenuPaginaHover');
+$('#menuConteudo1').hover(function(){
+    $('#menuConteudo1 .conteudoNomeMenuConteudo').toggleClass('conteudoNomeMenuConteudoHover');
 });
-$('#menuPagina2').hover(function(){
-    $('#menuPagina2 .conteudoNomeMenuPagina').toggleClass('conteudoNomeMenuPaginaHover');
+$('#menuConteudo2').hover(function(){
+    $('#menuConteudo2 .conteudoNomeMenuConteudo').toggleClass('conteudoNomeMenuConteudoHover');
 });
-$('#menuPagina3').hover(function(){
-    $('#menuPagina3 .conteudoNomeMenuPagina').toggleClass('conteudoNomeMenuPaginaHover');
+$('#menuConteudo3').hover(function(){
+    $('#menuConteudo3 .conteudoNomeMenuConteudo').toggleClass('conteudoNomeMenuConteudoHover');
 });
-$('#menuPagina4').hover(function(){
-    $('#menuPagina4 .conteudoNomeMenuPagina').toggleClass('conteudoNomeMenuPaginaHover');
+$('#menuConteudo4').hover(function(){
+    $('#menuConteudo4 .conteudoNomeMenuConteudo').toggleClass('conteudoNomeMenuConteudoHover');
 });
-$('#menuPagina5').hover(function(){
-    $('#menuPagina5 .conteudoNomeMenuPagina').toggleClass('conteudoNomeMenuPaginaHover');
+$('#menuConteudo5').hover(function(){
+    $('#menuConteudo5 .conteudoNomeMenuConteudo').toggleClass('conteudoNomeMenuConteudoHover');
 });
-$('#menuPagina6').hover(function(){
-    $('#menuPagina6 .conteudoNomeMenuPagina').toggleClass('conteudoNomeMenuPaginaHover');
+$('#menuConteudo6').hover(function(){
+    $('#menuConteudo6 .conteudoNomeMenuConteudo').toggleClass('conteudoNomeMenuConteudoHover');
 });
-$('#menuPagina7').hover(function(){
-    $('#menuPagina7 .conteudoNomeMenuPagina').toggleClass('conteudoNomeMenuPaginaHover');
+$('#menuConteudo7').hover(function(){
+    $('#menuConteudo7 .conteudoNomeMenuConteudo').toggleClass('conteudoNomeMenuConteudoHover');
 });
-$('#menuPagina8').hover(function(){
-    $('#menuPagina8 .conteudoNomeMenuPagina').toggleClass('conteudoNomeMenuPaginaHover');
+$('#menuConteudo8').hover(function(){
+    $('#menuConteudo8 .conteudoNomeMenuConteudo').toggleClass('conteudoNomeMenuConteudoHover');
 });
-$('#menuPagina9').hover(function(){
-    $('#menuPagina9 .conteudoNomeMenuPagina').toggleClass('conteudoNomeMenuPaginaHover');
+$('#menuConteudo9').hover(function(){
+    $('#menuConteudo9 .conteudoNomeMenuConteudo').toggleClass('conteudoNomeMenuConteudoHover');
 });

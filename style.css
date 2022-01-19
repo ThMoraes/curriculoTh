@@ -50,7 +50,7 @@ body::-webkit-scrollbar-thumb {
     border-right: solid 2px #b0c4de65;
     margin: auto 5px;
 }
-#nomeBotaoMenu,#nomeBotaoMenuHover,#nomeBotaoMenuClose{
+#nomeBotaoMenu,#nomeBotaoAcessibilidade{
     font-size: 30px;
 }
 .nomeTopo{
@@ -59,7 +59,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* botão menu */
-
 .botaoMenu{
     font-weight: bolder;
     color: #87CEFA;
@@ -88,7 +87,6 @@ body::-webkit-scrollbar-thumb {
     border: #000000 solid 1px;
     cursor: pointer;
 }
-
 .botaoMenuClose:hover{
     padding: 0px 2px;
     margin-right: 2px;
@@ -99,7 +97,6 @@ body::-webkit-scrollbar-thumb {
     color: #000;
     cursor: pointer;
 }
-
 /* menu */
 .menu{
     display: none;
@@ -114,28 +111,28 @@ body::-webkit-scrollbar-thumb {
 .menuSuperior{
     margin-top: 15px;
 }
-.menuPagina{
+.menuConteudo{
     padding: 5px;
 }
-.conteudoNomeMenuPagina{
+.conteudoNomeMenuConteudo{
     padding: 5px 5px;
     padding-left: 20px;
     display: flex;
 }
-.conteudoNomeMenuPaginaHover{
+.conteudoNomeMenuConteudoHover{
     background-color: #87CEFA;
     padding: 5px 5px;
     padding-left: 7px;
     margin-left: 25px;
     border-radius: 12px 50px 50px 12px;
 }
-.nomeMenuPagina{
+.nomeMenuConteudo{
     font-size: 20px;
     color: #000000;
     font-weight: bolder;
     padding-left: 5px;
 }
-.icon{
+.iconeMenu{
     color: #000000;
 }
 
