@@ -1,15 +1,26 @@
-function abrirFecharMenu(){    
+function abrirFecharMenu(){
     var str = document.getElementById("nomeBotaoMenu").innerHTML;
     var arr = str.split(" ");
     var res = arr[0];
     
-    if( res == "menu"){
+    if( res == "menu_open"){
         var menu = document.getElementById('menu');
         menu.className = "menuMostrar";
 
         var conteudos = document.getElementById('conteudosInformacoes');
         conteudos.className = "conteudosOcultar";
+        
+        var nomebotaoMenu = document.getElementById('nomeBotaoMenu');
+        nomebotaoMenu.innerHTML = "close";
+        var botaoMenu = document.getElementById('botaoMenu');
+        botaoMenu.className = "botaoMenuClose";
+    }
+    else if( res == "menu"){
+        var menu = document.getElementById('menu');
+        menu.className = "menuMostrar";
 
+        var conteudos = document.getElementById('conteudosInformacoes');
+        conteudos.className = "conteudosOcultar";
         
         var nomebotaoMenu = document.getElementById('nomeBotaoMenu');
         nomebotaoMenu.innerHTML = "close";
@@ -22,7 +33,6 @@ function abrirFecharMenu(){
 
         var conteudos = document.getElementById('conteudosInformacoes');
         conteudos.className = "conteudos";
-
         
         var nomebotaoMenu = document.getElementById('nomeBotaoMenu');
         nomebotaoMenu.innerHTML = "menu";
@@ -31,35 +41,50 @@ function abrirFecharMenu(){
     }
 };
 
+function mouseOver(){
+    var str = document.getElementById("nomeBotaoMenu").innerHTML;
+    var arr = str.split(" ");
+    var res = arr[0];
+    
+    if( res == "menu"){
+        var nomebotaoMenu = document.getElementById('nomeBotaoMenu');
+        nomebotaoMenu.innerHTML = "menu_open";
+        var botaoMenu = document.getElementById('botaoMenu');
+        botaoMenu.className = "botaoMenuOver";
+    }
+}
+function mouseOut(){
+    var str = document.getElementById("nomeBotaoMenu").innerHTML;
+    var arr = str.split(" ");
+    var res = arr[0];
+    
+    if( res == "menu_open"){
+        var nomebotaoMenu = document.getElementById('nomeBotaoMenu');
+        nomebotaoMenu.innerHTML = "menu";
+        var botaoMenu = document.getElementById('botaoMenu');
+        botaoMenu.className = "botaoMenu";
+    }
+}
 
 
+function menuPagina(){
+    var menu = document.getElementById('menu');
+    menu.className = "menu";
 
-$('.nomeBotaoMenuClose').click(function(e){
+    var conteudos = document.getElementById('conteudosInformacoes');
+    conteudos.className = "conteudos";
+
+    var nomebotaoMenu = document.getElementById('nomeBotaoMenu');
+    nomebotaoMenu.innerHTML = "menu";
+    var botaoMenu = document.getElementById('botaoMenu');
+    botaoMenu.className = "botaoMenu";
+
+
+    var menuPagina = document.getElementById('conteudoNomeMenuPagina');
     /* Desabilita tag <a> */
-    e.preventDefault();
-
-    $('.menu').toggleClass('menuMostrar');
-    $('.conteudos').toggleClass('conteudosOcultar');
-    
-    $('.nomeBotaoMenu').toggleClass('nomeBotaoMenuOcultar');
-    $('.nomeBotaoMenuClose').toggleClass('nomeBotaoMenuCloseMostrar');
-    
-
-});
-
-
-$('.conteudoNomeMenuPagina').click(function(e){
-    $('.menu').toggleClass('menuMostrar');
-    $('.conteudos').toggleClass('conteudosOcultar');
-    
-    $('.nomeBotaoMenu').toggleClass('nomeBotaoMenuOcultar');
-    $('.nomeBotaoMenuClose').toggleClass('nomeBotaoMenuCloseMostrar');
-
-    
-    /* Desabilita tag <a> */
-    e.preventDefault();
+    menuPagina.preventDefault();
     /* Variavel pra pegar o que tem dentro da tag <a> */
-    var id = $(this).attr('href');
+    var id = $(menuPagina).attr('href');
     /* Distância entre o conteúdo da tag <a> até o top */
     targetOffset = $(id).offset().top;
     /* Pegar a altura do menu */
@@ -68,10 +93,12 @@ $('.conteudoNomeMenuPagina').click(function(e){
     $('html, body').animate({
         scrollTop: targetOffset - menuHeight
     },/*velocidade da animação*/900);
-});
+}
 
 
-    $('#linkBotaoInicioPagina').click(function(e){   
+
+
+    $('#linkBotaoInicioPagina').click(function(e){
         /* Desabilita tag <a> */
         e.preventDefault();
         /* Variavel pra pegar o que tem dentro da tag <a> */

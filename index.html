@@ -13,7 +13,7 @@
 
         <section class="topo">
             <div class="botaoTopo">
-                <button class="botaoMenu" id="botaoMenu" onclick="abrirFecharMenu()">
+                <button class="botaoMenu" id="botaoMenu" onclick="abrirFecharMenu()" onmouseover="mouseOver()" onmouseout="mouseOut()">
                     <span class="material-icons" id="nomeBotaoMenu">menu</span>
                 </button>   
             </div>
@@ -26,15 +26,15 @@
         <section class="menu" id="menu">
             <nav class="conteudoMenu" id="conteudoMenu">
                 <ul class="menuSuperior">
-                    <li class="menuPagina" id="menuPagina1"><a href="#conteudoInformacoesPessoal" class="conteudoNomeMenuPagina" id="conteudoNomeMenuPagina1"><span class="material-icons icon" id="icon1">account_circle</span><span class="nomeMenuPagina" id="nome1">Informações Pessoais</span></a></li>
-                    <li class="menuPagina" id="menuPagina2"><a href="#conteudoRedes" class="conteudoNomeMenuPagina"><span class="material-icons icon" id="icon2">public</span><span class="nomeMenuPagina" id="nome2">Redes</span></a></li>
-                    <li class="menuPagina" id="menuPagina3"><a href="#conteudoEscolaridade" class="conteudoNomeMenuPagina"><span class="material-icons icon" id="icon3">school</span><span class="nomeMenuPagina" id="nome3">Escolaridade</span></a></li>
-                    <li class="menuPagina" id="menuPagina4"><a href="#conteudoExperiencia" class="conteudoNomeMenuPagina"><span class="material-icons icon" id="icon4">work</span><span class="nomeMenuPagina" id="nome4">Experiência</span></a></li>
-                    <li class="menuPagina" id="menuPagina5"><a href="#conteudoCursos" class="conteudoNomeMenuPagina"><span class="material-icons icon" id="icon5">class</span><span class="nomeMenuPagina" id="nome5">Cursos</span></a></li>
-                    <li class="menuPagina" id="menuPagina6"><a href="#conteudoCertificados" class="conteudoNomeMenuPagina"><span class="material-icons icon" id="icon6">class</span><span class="nomeMenuPagina" id="nome6">Certificados</span></a></li>
-                    <li class="menuPagina" id="menuPagina7"><a href="#conteudoConhecimentos" class="conteudoNomeMenuPagina"><!-- <span class="material-icons icon">account_circle</span> --><span class="material-icons icon" id="icon7">engineering</span><span class="nomeMenuPagina" id="nome7">Conhecimentos e Ferramentas</span></a></li>
-                    <li class="menuPagina" id="menuPagina8"><a href="#conteudoCompetencias" class="conteudoNomeMenuPagina"><!-- <span class="material-icons icon">account_circle</span> <span class="material-icons icon">account_circle</span>--><span class="material-icons icon" id="icon8">psychology</span><span class="nomeMenuPagina" id="nome8">Competências</span></a></li>
-                    <li class="menuPagina" id="menuPagina9"><a href="#conteudoDownload" class="conteudoNomeMenuPagina"><!-- <span class="material-icons icon">download</span> --><span class="material-icons icon" id="icon9">download_for_offline</span><span class="nomeMenuPagina" id="nome9">Download do Curriculo</span></a></li>
+                    <li class="menuPagina" id="menuPagina1" onclick="menuPagina()"><a href="#conteudoInformacoesPessoal" class="conteudoNomeMenuPagina" id="conteudoNomeMenuPagina"><span class="material-icons icon" id="icon1">account_circle</span><span class="nomeMenuPagina" id="nome1">Informações Pessoais</span></a></li>
+                    <li class="menuPagina" id="menuPagina2" onclick="menuPagina()"><a href="#conteudoRedes" class="conteudoNomeMenuPagina"><span class="material-icons icon" id="icon2">public</span><span class="nomeMenuPagina" id="nome2">Redes</span></a></li>
+                    <li class="menuPagina" id="menuPagina3" onclick="menuPagina()"><a href="#conteudoEscolaridade" class="conteudoNomeMenuPagina"><span class="material-icons icon" id="icon3">school</span><span class="nomeMenuPagina" id="nome3">Escolaridade</span></a></li>
+                    <li class="menuPagina" id="menuPagina4" onclick="menuPagina()"><a href="#conteudoExperiencia" class="conteudoNomeMenuPagina"><span class="material-icons icon" id="icon4">work</span><span class="nomeMenuPagina" id="nome4">Experiência</span></a></li>
+                    <li class="menuPagina" id="menuPagina5" onclick="menuPagina()"><a href="#conteudoCursos" class="conteudoNomeMenuPagina"><span class="material-icons icon" id="icon5">class</span><span class="nomeMenuPagina" id="nome5">Cursos</span></a></li>
+                    <li class="menuPagina" id="menuPagina6" onclick="menuPagina()"><a href="#conteudoCertificados" class="conteudoNomeMenuPagina"><span class="material-icons icon" id="icon6">class</span><span class="nomeMenuPagina" id="nome6">Certificados</span></a></li>
+                    <li class="menuPagina" id="menuPagina7" onclick="menuPagina()"><a href="#conteudoConhecimentos" class="conteudoNomeMenuPagina"><span class="material-icons icon" id="icon7">engineering</span><span class="nomeMenuPagina" id="nome7">Conhecimentos e Ferramentas</span></a></li>
+                    <li class="menuPagina" id="menuPagina8" onclick="menuPagina()"><a href="#conteudoCompetencias" class="conteudoNomeMenuPagina"><span class="material-icons icon" id="icon8">psychology</span><span class="nomeMenuPagina" id="nome8">Competências</span></a></li>
+                    <li class="menuPagina" id="menuPagina9" onclick="menuPagina()"><a href="#conteudoDownload" class="conteudoNomeMenuPagina"><span class="material-icons icon" id="icon9">download_for_offline</span><span class="nomeMenuPagina" id="nome9">Download do Curriculo</span></a></li>
                 </ul>
             </nav>
         </section>
