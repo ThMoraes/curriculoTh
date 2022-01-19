@@ -65,11 +65,17 @@ body::-webkit-scrollbar-thumb {
     font-weight: bolder;
     color: #87CEFA;
     margin: 0px 5px;
+    background-color: rgba(0, 0, 0, 0);
+    border: rgba(0, 0, 0, 0) solid 1px;
+    cursor: pointer;
 }
 .botaoMenuClose{
     font-weight: bolder;
     color: #87CEFA;
     margin: 0px 5px;
+    background-color: rgba(0, 0, 0, 0);
+    border: rgba(0, 0, 0, 0) solid 1px;
+    cursor: pointer;
 }
 
 .botaoMenuClose:hover{    
@@ -78,6 +84,7 @@ body::-webkit-scrollbar-thumb {
     transform: rotate(180deg);
     transition: 0.5s;
     color: #000;
+    cursor: pointer;
 }
 
 /* menu */
