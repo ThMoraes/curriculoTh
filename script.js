@@ -1,29 +1,38 @@
-/* li do menu */
-/* Tirar ancora interna do link e animar scroll ao clicar no menu */
-$('.nomeBotaoMenu').click(function(e){
-    /* Desabilita tag <a> */
-    e.preventDefault();
-
-    $('.menu').toggleClass('menuMostrar');
-    $('.conteudos').toggleClass('conteudosOcultar');
+function abrirFecharMenu(){    
+    var str = document.getElementById("nomeBotaoMenu").innerHTML;
+    var arr = str.split(" ");
+    var res = arr[0];
     
-    $('.nomeBotaoMenu').toggleClass('nomeBotaoMenuOcultar');
-    $('.nomeBotaoMenuClose').toggleClass('nomeBotaoMenuCloseMostrar');
-});
+    if( res == "menu"){
+        var menu = document.getElementById('menu');
+        menu.className = "menuMostrar";
+
+        var conteudos = document.getElementById('conteudosInformacoes');
+        conteudos.className = "conteudosOcultar";
+
+        
+        var nomebotaoMenu = document.getElementById('nomeBotaoMenu');
+        nomebotaoMenu.innerHTML = "close";
+        var botaoMenu = document.getElementById('botaoMenu');
+        botaoMenu.className = "botaoMenuClose";
+    }
+    else{
+        var menu = document.getElementById('menu');
+        menu.className = "menu";
+
+        var conteudos = document.getElementById('conteudosInformacoes');
+        conteudos.className = "conteudos";
+
+        
+        var nomebotaoMenu = document.getElementById('nomeBotaoMenu');
+        nomebotaoMenu.innerHTML = "menu";
+        var botaoMenu = document.getElementById('botaoMenu');
+        botaoMenu.className = "botaoMenu";
+    }
+};
 
 
-$('.nomeBotaoMenuHover').click(function(e){
-    /* Desabilita tag <a> */
-    e.preventDefault();
 
-    $('.menu').toggleClass('menuMostrar');
-    $('.conteudos').toggleClass('conteudosOcultar');
-    
-    $('.nomeBotaoMenu').toggleClass('nomeBotaoMenuOcultar');
-    $('.nomeBotaoMenuClose').toggleClass('nomeBotaoMenuCloseMostrar');
-    
-
-});
 
 $('.nomeBotaoMenuClose').click(function(e){
     /* Desabilita tag <a> */
@@ -36,15 +45,6 @@ $('.nomeBotaoMenuClose').click(function(e){
     $('.nomeBotaoMenuClose').toggleClass('nomeBotaoMenuCloseMostrar');
     
 
-});
-
-$('.nomeBotaoMenu').hover(function(){
-    $('.nomeBotaoMenu').toggleClass('nomeBotaoMenuOcultar');
-    $('.nomeBotaoMenuHover').toggleClass('nomeBotaoMenuHoverMostrar');
-    document.getElementById('nomeBotaoMenuHover').style.background = "#87CEFA";
-    document.getElementById('nomeBotaoMenuHover').style.borderRadius = "50%";
-    document.getElementById('nomeBotaoMenuHover').style.margin = "0px 5px";
-    document.getElementById('nomeBotaoMenuHover').style.color = "#000";
 });
 
 
@@ -70,20 +70,21 @@ $('.conteudoNomeMenuPagina').click(function(e){
     },/*velocidade da animação*/900);
 });
 
-$('#linkBotaoInicioPagina').click(function(e){   
-    /* Desabilita tag <a> */
-    e.preventDefault();
-    /* Variavel pra pegar o que tem dentro da tag <a> */
-    var id = $(this).attr('href');
-    /* Distância entre o conteúdo da tag <a> até o top */
-    targetOffset = $(id).offset().top;
-    /* Pegar a altura do menu */
-    menuHeight = $('.topo').innerHeight();
-    /* Animação */
-    $('html, body').animate({
-        scrollTop: targetOffset - menuHeight
-    },/*velocidade da animação*/900);
-});
+
+    $('#linkBotaoInicioPagina').click(function(e){   
+        /* Desabilita tag <a> */
+        e.preventDefault();
+        /* Variavel pra pegar o que tem dentro da tag <a> */
+        var id = $(this).attr('href');
+        /* Distância entre o conteúdo da tag <a> até o top */
+        targetOffset = $(id).offset().top;
+        /* Pegar a altura do menu */
+        menuHeight = $('.topo').innerHeight();
+        /* Animação */
+        $('html, body').animate({
+            scrollTop: targetOffset - menuHeight
+        },/*velocidade da animação*/900);
+    });
 
 
 
