@@ -64,16 +64,16 @@ body::-webkit-scrollbar-thumb {
     font-weight: bolder;
     color: #87CEFA;
     margin: 0px 5px;
-    background-color: rgba(0, 0, 0, 0);
-    border: rgba(0, 0, 0, 0) solid 1px;
+    background-color: #000000;
+    border: #000000 solid 1px;
     cursor: pointer;
 }
 .botaoMenuClose{
     font-weight: bolder;
     color: #87CEFA;
     margin: 0px 5px;
-    background-color: rgba(0, 0, 0, 0);
-    border: rgba(0, 0, 0, 0) solid 1px;
+    background-color: #000000;
+    border: #000000 solid 1px;
     cursor: pointer;
 }
 
